@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ORAH Website",
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["/tmp/orah-website/serve.py"],
+      "port": 3000
+    }
+  ]
+}
