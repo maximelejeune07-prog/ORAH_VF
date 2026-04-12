@@ -723,3 +723,124 @@ input, textarea, select { font-family: var(--font); }
   .partner-cta-card { padding: 40px 24px !important; }
   .partner-cta-card .btn-lg { width: 100%; justify-content: center; box-sizing: border-box; }
 }
+
+/* ============================================
+   POPUP GUILLEMINS
+   ============================================ */
+.guillemins-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s var(--ease-out), visibility 0.4s;
+}
+.guillemins-popup.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.guillemins-popup-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 8, 2, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.guillemins-popup-card {
+  position: relative;
+  background: #F2EACC;
+  border: 1px solid rgba(44, 26, 10, 0.15);
+  border-radius: var(--radius-lg);
+  padding: clamp(32px, 5vw, 56px);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  transform: translateY(24px) scale(0.97);
+  transition: transform 0.4s var(--ease-out);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.7);
+}
+.guillemins-popup.is-open .guillemins-popup-card {
+  transform: translateY(0) scale(1);
+}
+.guillemins-popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(44, 26, 10, 0.1);
+  color: #2C1A0A;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.guillemins-popup-close:hover { background: rgba(44, 26, 10, 0.2); }
+.guillemins-popup-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2C1A0A;
+  margin-bottom: 20px;
+}
+.guillemins-popup-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2C1A0A;
+  flex-shrink: 0;
+  animation: popup-pulse 1.5s ease-in-out infinite;
+}
+@keyframes popup-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+.guillemins-popup-affiche {
+  width: 100%;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+}
+.guillemins-popup-desc {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(44, 26, 10, 0.65);
+  margin-bottom: 28px;
+}
+.guillemins-popup-desc strong {
+  color: #2C1A0A;
+  font-weight: 600;
+}
+.guillemins-popup-cta {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: #2C1A0A !important;
+  color: #F2EACC !important;
+  border-color: #2C1A0A !important;
+}
+.guillemins-popup-cta:hover {
+  background: #3e2510 !important;
+  border-color: #3e2510 !important;
+}
+.guillemins-popup-more {
+  font-size: 13px;
+  color: rgba(44, 26, 10, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.guillemins-popup-more:hover { color: #2C1A0A; }

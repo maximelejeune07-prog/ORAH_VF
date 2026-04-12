@@ -338,6 +338,33 @@ function initCounters() {
 }
 
 /* ============================================
+   POPUP GUILLEMINS
+   ============================================ */
+function initGuilleminsPopup() {
+  const popup = document.getElementById('guilleminsPopup');
+  if (!popup) return;
+  if (sessionStorage.getItem('orah-guillemins-popup')) return;
+
+  const closeBtn = document.getElementById('guilleminsClose');
+  const overlay  = document.getElementById('guilleminsOverlay');
+
+  function openPopup() {
+    popup.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closePopup() {
+    popup.classList.remove('is-open');
+    document.body.style.overflow = '';
+    sessionStorage.setItem('orah-guillemins-popup', '1');
+  }
+
+  setTimeout(openPopup, 1200);
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+}
+
+/* ============================================
    INIT
    ============================================ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -350,4 +377,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
   initMarquee();
   initCounters();
+  initGuilleminsPopup();
 });
