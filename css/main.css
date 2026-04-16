@@ -101,9 +101,24 @@ input, textarea, select { font-family: var(--font); }
 .btn-lg { padding: 18px 42px; font-size: 15px; }
 .btn-sm { padding: 9px 20px; font-size: 12px; }
 .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
-.hero-app-btn { margin-top: 16px; }
-.hero-app-btn .btn-ghost { color: var(--cream-muted); font-size: 12px; letter-spacing: 0.12em; }
-.hero-app-btn .btn-ghost:hover { color: var(--cream); }
+.hero-app-btn { margin-top: 16px; display: flex; justify-content: center; width: 100%; }
+.hero-app-btn .btn {
+  background: var(--cream);
+  color: var(--orange);
+  border-color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+}
+.hero-app-btn .btn:hover {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--orange-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(242,235,212,0.15);
+}
 
 /* ============================================
    HEADER
@@ -190,7 +205,7 @@ input, textarea, select { font-family: var(--font); }
 .hero-center .hero-sub { margin-inline: auto; }
 .hero-center .btn-group { justify-content: center; }
 /* Ensure content doesn't push into scroll hint area */
-.hero-content { padding-bottom: 100px; }
+.hero-content { padding-bottom: 140px; }
 
 .scroll-hint {
   position: absolute; bottom: 36px; left: 0; right: 0;
