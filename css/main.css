@@ -735,6 +735,8 @@ input, textarea, select { font-family: var(--font); }
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
   .btn-group { flex-direction: column; }
   .hero-center .btn-group { align-items: center; }
+  .hero-app-btn { margin-top: 10px; width: 100%; }
+  .hero-app-btn .btn { width: 100%; }
   .cookie-banner { flex-direction: column; }
   .cookie-actions { width: 100%; }
   .cookie-actions .btn { flex: 1; justify-content: center; }
@@ -855,14 +857,21 @@ input, textarea, select { font-family: var(--font); }
   border-color: #3e2510 !important;
 }
 .guillemins-popup-app {
-  display: block;
+  display: flex;
   width: 100%;
+  box-sizing: border-box;
   justify-content: center;
   margin-bottom: 16px;
   background: transparent !important;
   color: #2C1A0A !important;
   border: 2px solid #2C1A0A !important;
   font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+  font-size: clamp(11px, 3.2vw, 15px);
+  letter-spacing: 0.06em;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .guillemins-popup-app:hover {
   background: rgba(44, 26, 10, 0.08) !important;
