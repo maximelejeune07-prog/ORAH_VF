@@ -101,6 +101,9 @@ input, textarea, select { font-family: var(--font); }
 .btn-lg { padding: 18px 42px; font-size: 15px; }
 .btn-sm { padding: 9px 20px; font-size: 12px; }
 .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-app-btn { margin-top: 16px; }
+.hero-app-btn .btn-ghost { color: var(--cream-muted); font-size: 12px; letter-spacing: 0.12em; }
+.hero-app-btn .btn-ghost:hover { color: var(--cream); }
 
 /* ============================================
    HEADER
@@ -835,6 +838,19 @@ input, textarea, select { font-family: var(--font); }
 .guillemins-popup-cta:hover {
   background: #3e2510 !important;
   border-color: #3e2510 !important;
+}
+.guillemins-popup-app {
+  display: block;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: transparent !important;
+  color: #2C1A0A !important;
+  border: 2px solid #2C1A0A !important;
+  font-weight: 700;
+}
+.guillemins-popup-app:hover {
+  background: rgba(44, 26, 10, 0.08) !important;
 }
 .guillemins-popup-more {
   font-size: 13px;
