@@ -86,8 +86,8 @@ const DATA = {
     guillemins: [
       { q: 'Quand commence l\'événement ?', a: 'Les portes ouvrent à 20h00. Le premier set démarre à 21h00. Fin prévue à 04h00.' },
       { q: 'Comment accéder à la gare de Liège-Guillemins ?', a: 'La gare est accessible en train (connexion directe depuis Bruxelles, Namur, Verviers), en bus (TEC, lignes 1, 18, 23) et à vélo. Un parking vélo sécurisé est disponible sur place. Nous déconseillons fortement la voiture.' },
-      { q: 'Qu\'est-ce que le billet VIP comprend ?', a: 'Le billet VIP comprend : accès prioritaire sans file, espace lounge privatif, boissons de bienvenue, vue privilégiée sur la scène, service vestiaire inclus et badge collector.' },
-      { q: 'Y a-t-il un vestiaire ?', a: 'Oui, un vestiaire est disponible. Inclus dans le billet VIP, il est payant en accès standard (2€).' },
+      { q: 'Qu\'est-ce que le billet VIP comprend ?', a: 'Le billet VIP comprend : accès prioritaire sans file, espace lounge privatif, boissons de bienvenue, vue privilégiée sur la scène et badge collector.' },
+      { q: 'Y a-t-il un vestiaire ?', a: 'Non, il n\'y a pas de vestiaire disponible sur place. Nous te conseillons de voyager léger.' },
       { q: 'Les mineurs sont-ils acceptés ?', a: 'L\'événement est réservé aux personnes majeures (18+). Une pièce d\'identité sera demandée à l\'entrée.' },
       { q: 'Quelle est la politique de réduction pour les habitants du voisinage ?', a: 'Les riverains de la Gare Guillemins bénéficient d\'un code promotionnel exclusif de -25% sur leurs billets. Contactez-nous via le formulaire contact pour l\'obtenir.' },
       { q: 'Y a-t-il des éco-cups ?', a: 'Oui, ORAH fonctionne en système éco-cup consigné. Un dépôt de 2€ est demandé à l\'achat de la première boisson, restitué à la restitution du verre.' },
