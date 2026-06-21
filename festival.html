@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -23,35 +23,41 @@
     </a>
     <nav class="main-nav">
       <a href="index.html">Accueil</a>
-      <a href="guillemins.html">ORAH Guillemins</a>
       <a href="festival.html" class="active">ORAH Festival</a>
+      <a href="guillemins.html">ORAH Guillemins</a>
       <a href="edition-2025.html">Édition 2025</a>
       <a href="partenaires.html">Partenaires</a>
       <a href="benevoles.html">Bénévoles</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
-      <a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Billetterie</a>
-      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Tickets</a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 <nav class="mobile-nav">
   <a href="index.html">Accueil</a>
   <a href="guillemins.html">ORAH Guillemins</a>
-  <a href="festival.html">ORAH Festival</a>
+  <a href="festival.html" style="color:var(--orange);font-weight:700;">ORAH Festival</a>
   <a href="edition-2025.html">Édition 2025</a>
   <a href="partenaires.html">Partenaires</a>
   <a href="benevoles.html">Bénévoles</a>
   <a href="contact.html">Contact</a>
-  <a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" class="btn btn-primary mt40" target="_blank" rel="noopener">Billetterie →</a>
+  <a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" class="btn btn-primary mt40" target="_blank" rel="noopener">Tickets →</a>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" style="position:relative; overflow:hidden;">
+  <video autoplay muted loop playsinline preload="metadata"
+         aria-hidden="true"
+         style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.7; pointer-events:none;">
+    <source src="assets/videos/festival-teasing.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.6) 100%); z-index:1; pointer-events:none;"></div>
   <div class="hero-glow"></div>
   <img src="assets/logos/Monogramme_orange_.png" alt="" class="hero-blob" aria-hidden="true">
-  <div class="wrap hero-content">
+  <div class="wrap hero-content" style="position:relative; z-index:2;">
     <h1 class="disp-1 hero-title">
       ORAH<br><span class="text-orange">Festival.</span>
     </h1>
@@ -70,7 +76,7 @@
       <span class="chip">Quai des fermettes, 4600 Visé</span>
     </div>
   </div>
-  <div class="scroll-hint" aria-hidden="true">
+  <div class="scroll-hint" aria-hidden="true" style="position:relative; z-index:2;">
     <span>Scroll</span>
     <div class="scroll-hint-line"></div>
   </div>
@@ -139,137 +145,145 @@
       <button class="tab-btn">Sam. 27 juin</button>
     </div>
 
-    <!-- Jour 1 — Mercredi 17h30→1h -->
+    <!-- Jour 1 — Mercredi 24 juin -->
     <div class="tab-panel active">
       <div class="lineup-day">
         <div class="lineup-slot">
-          <span class="lineup-slot-time">17:30</span>
-          <span class="lineup-slot-name">Ouverture — Warm-up</span>
-          <span class="lineup-slot-tag">Accueil</span>
+          <span class="lineup-slot-time">17:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/steviemusic_/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">STEVIE</a> B2B <a href="https://www.instagram.com/belben__music/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">BELBEN</a></span>
+          <span class="lineup-slot-tag">Opening</span>
         </div>
-        <div class="lineup-slot tba">
+        <div class="lineup-slot">
           <span class="lineup-slot-time">19:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/alexvergnet/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">ALEX VERGNET</a></span>
+          <span class="lineup-slot-tag">House</span>
+        </div>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">21:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/youngmerzzy/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">MERZZY</a></span>
+          <span class="lineup-slot-tag">House</span>
+        </div>
+        <div class="lineup-slot headliner">
+          <span class="lineup-slot-time">23:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/luchmusic/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">LUCH</a></span>
+          <span class="lineup-slot-tag">Peak Time</span>
+        </div>
+        <div class="lineup-slot" style="opacity:0.5; border-top:1px dashed rgba(242,235,212,0.15);">
+          <span class="lineup-slot-time" style="font-style:italic;">00:00</span>
+          <span class="lineup-slot-name" style="font-style:italic; font-weight:400;">Feux d'artifices</span>
+          <span class="lineup-slot-tag" style="opacity:0;">—</span>
+        </div>
+        <div class="lineup-slot" style="opacity:0.5; border-top:1px dashed rgba(242,235,212,0.15);">
+          <span class="lineup-slot-time" style="font-style:italic;">01:00</span>
+          <span class="lineup-slot-name" style="font-style:italic; font-weight:400;">Fin de soirée</span>
+          <span class="lineup-slot-tag" style="opacity:0;">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jour 2 — Jeudi 25 juin -->
+    <div class="tab-panel">
+      <div class="lineup-day">
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">17:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/bricecariola/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">BRICE</a> B2B <a href="https://www.instagram.com/a_m_i_music" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">AMI</a></span>
+          <span class="lineup-slot-tag">Opening</span>
+        </div>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">19:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/antanmusic/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">ANTAN</a></span>
+          <span class="lineup-slot-tag">House</span>
+        </div>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">21:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/kaudron.music/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">KAUDRON</a></span>
+          <span class="lineup-slot-tag">House</span>
+        </div>
+        <div class="lineup-slot headliner">
+          <span class="lineup-slot-time">23:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/unfazed.br/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">UNFAZED</a></span>
+          <span class="lineup-slot-tag">Peak Time</span>
+        </div>
+        <div class="lineup-slot" style="opacity:0.5; border-top:1px dashed rgba(242,235,212,0.15);">
+          <span class="lineup-slot-time" style="font-style:italic;">01:00</span>
+          <span class="lineup-slot-name" style="font-style:italic; font-weight:400;">Fin de soirée</span>
+          <span class="lineup-slot-tag" style="opacity:0;">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jour 3 — Vendredi 26 juin -->
+    <div class="tab-panel">
+      <div class="lineup-day">
+        <div class="lineup-slot tba">
+          <span class="lineup-slot-time">17:00</span>
           <span class="lineup-slot-name">TBA — À annoncer</span>
-          <span class="lineup-slot-tag">Deep House</span>
+          <span class="lineup-slot-tag">Opening</span>
         </div>
         <div class="lineup-slot tba">
-          <span class="lineup-slot-time">21:00</span>
+          <span class="lineup-slot-time">18:30</span>
           <span class="lineup-slot-name">TBA — À annoncer</span>
           <span class="lineup-slot-tag">House</span>
         </div>
-        <div class="lineup-slot tba headliner">
-          <span class="lineup-slot-time">23:00</span>
-          <span class="lineup-slot-name">TBA — Headliner</span>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">20:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/brunnomusic_/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">BRUNNO</a></span>
+          <span class="lineup-slot-tag">House</span>
+        </div>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">22:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/jonni.gil/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">JONNI GIL</a></span>
           <span class="lineup-slot-tag">Peak Time</span>
         </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">01:00</span>
-          <span class="lineup-slot-name">Fin de soirée</span>
-          <span class="lineup-slot-tag">—</span>
+        <div class="lineup-slot headliner">
+          <span class="lineup-slot-time">00:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/thebensy/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">BENSY</a></span>
+          <span class="lineup-slot-tag">Peak Time</span>
+        </div>
+        <div class="lineup-slot" style="opacity:0.5; border-top:1px dashed rgba(242,235,212,0.15);">
+          <span class="lineup-slot-time" style="font-style:italic;">02:00</span>
+          <span class="lineup-slot-name" style="font-style:italic; font-weight:400;">Fin de soirée</span>
+          <span class="lineup-slot-tag" style="opacity:0;">—</span>
         </div>
       </div>
     </div>
 
-    <!-- Jour 2 — Jeudi 17h30→1h -->
+    <!-- Jour 4 — Samedi 27 juin -->
     <div class="tab-panel">
       <div class="lineup-day">
-        <div class="lineup-slot">
-          <span class="lineup-slot-time">17:30</span>
-          <span class="lineup-slot-name">Ouverture — Warm-up</span>
-          <span class="lineup-slot-tag">Accueil</span>
-        </div>
         <div class="lineup-slot tba">
-          <span class="lineup-slot-time">19:00</span>
+          <span class="lineup-slot-time">17:00</span>
           <span class="lineup-slot-name">TBA — À annoncer</span>
-          <span class="lineup-slot-tag">Afro House</span>
+          <span class="lineup-slot-tag">Opening</span>
         </div>
         <div class="lineup-slot tba">
-          <span class="lineup-slot-time">21:00</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
-          <span class="lineup-slot-tag">Melodic</span>
-        </div>
-        <div class="lineup-slot tba headliner">
-          <span class="lineup-slot-time">23:00</span>
-          <span class="lineup-slot-name">TBA — Headliner</span>
-          <span class="lineup-slot-tag">Peak Time</span>
-        </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">01:00</span>
-          <span class="lineup-slot-name">Fin de soirée</span>
-          <span class="lineup-slot-tag">—</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Jour 3 — Vendredi 17h30→2h -->
-    <div class="tab-panel">
-      <div class="lineup-day">
-        <div class="lineup-slot">
-          <span class="lineup-slot-time">17:30</span>
-          <span class="lineup-slot-name">Ouverture — Warm-up</span>
-          <span class="lineup-slot-tag">Accueil</span>
-        </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">19:00</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
-          <span class="lineup-slot-tag">Organic House</span>
-        </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">21:00</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
-          <span class="lineup-slot-tag">House / Live</span>
-        </div>
-        <div class="lineup-slot tba headliner">
-          <span class="lineup-slot-time">23:00</span>
-          <span class="lineup-slot-name">TBA — Headliner</span>
-          <span class="lineup-slot-tag">Peak Time</span>
-        </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">02:00</span>
-          <span class="lineup-slot-name">Fin de soirée</span>
-          <span class="lineup-slot-tag">—</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Jour 4 — Samedi 17h30→2h -->
-    <div class="tab-panel">
-      <div class="lineup-day">
-        <div class="lineup-slot">
-          <span class="lineup-slot-time">17:30</span>
-          <span class="lineup-slot-name">Ouverture — Warm-up</span>
-          <span class="lineup-slot-tag">Accueil</span>
-        </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">19:00</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
-          <span class="lineup-slot-tag">Deep House</span>
-        </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">21:00</span>
+          <span class="lineup-slot-time">18:30</span>
           <span class="lineup-slot-name">TBA — À annoncer</span>
           <span class="lineup-slot-tag">House</span>
         </div>
-        <div class="lineup-slot tba headliner">
-          <span class="lineup-slot-time">23:00</span>
-          <span class="lineup-slot-name">TBA — Grand Closing</span>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">20:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/axel.rozental/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">ROZENTAL</a></span>
+          <span class="lineup-slot-tag">House</span>
+        </div>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">22:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/mosoo.music/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">MOSOO</a> B2B <a href="https://www.instagram.com/ceesofc/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">CEES</a></span>
+          <span class="lineup-slot-tag">Peak Time</span>
+        </div>
+        <div class="lineup-slot headliner">
+          <span class="lineup-slot-time">00:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/lazare_sabry/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">LAZARE</a></span>
           <span class="lineup-slot-tag">Grand Finale</span>
         </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">02:00</span>
-          <span class="lineup-slot-name">Fin du festival</span>
-          <span class="lineup-slot-tag">—</span>
+        <div class="lineup-slot" style="opacity:0.5; border-top:1px dashed rgba(242,235,212,0.15);">
+          <span class="lineup-slot-time" style="font-style:italic;">02:00</span>
+          <span class="lineup-slot-name" style="font-style:italic; font-weight:400;">Fin du festival</span>
+          <span class="lineup-slot-tag" style="opacity:0;">—</span>
         </div>
       </div>
     </div>
 
-    <div class="mt40 reveal" style="text-align:center;">
-      <p class="body-sm mb24">Le line-up complet sera annoncé progressivement. Sois le premier à le savoir.</p>
-      <form class="newsletter-form" style="justify-content:center;" action="#" method="post">
-        <input type="email" name="email" placeholder="ton@email.com" required>
-        <button type="submit" class="btn btn-primary">Recevoir le line-up</button>
-      </form>
-    </div>
   </div>
 </section>
 
@@ -389,6 +403,19 @@
       </div>
     </div>
     <p class="body-sm text-muted mt24" style="text-align:center; opacity:0.7;">Les formules VIP sont affichées HTVA. <a href="mailto:orah.event@gmail.com" style="color:var(--orange);">Contactez-nous</a> pour toute demande groupe ou devis entreprise.</p>
+
+    <!-- SPONSORING CTA -->
+    <div class="reveal" style="margin-top:56px; padding:40px 40px; background:linear-gradient(135deg, rgba(212,86,26,0.12) 0%, rgba(212,86,26,0.04) 100%); border:1px solid rgba(212,86,26,0.3); border-radius:var(--radius-lg); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px;">
+      <div>
+        <span class="label text-orange">Entreprises & marques</span>
+        <h3 class="disp-3 mt8">Devenez partenaire <span class="text-orange">ORAH Festival.</span></h3>
+        <p class="body-md text-muted mt12" style="max-width:480px;">4 jours. Des milliers de festivaliers. Une communauté engagée. Découvrez notre dossier sponsoring et toutes les opportunités de visibilité.</p>
+      </div>
+      <div style="flex-shrink:0; display:flex; flex-direction:column; gap:12px; width:100%; max-width:360px;">
+        <a href="https://www.canva.com/design/DAG6Rpoprug/aO3JFmKOWPSWzZfEl6hxkg/view?utm_content=DAG6Rpoprug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h226b7d85ab" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Voir le dossier sponsoring →</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Nous contacter</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -403,7 +430,7 @@
       <div class="info-card">
         <div class="info-icon">📅</div>
         <div class="info-title">Dates</div>
-        <p class="info-text">Mercredi 24 au samedi 27 juin 2026<br>Portes : 17h30 chaque soir<br>Fin : 01h00 (mer/jeu) — 02h00 (ven/sam)</p>
+        <p class="info-text">Mercredi 24 au samedi 27 juin 2026<br>Portes : 17h00 chaque soir<br>Fin : 01h00 (mer/jeu) — 02h00 (ven/sam)</p>
       </div>
       <div class="info-card">
         <div class="info-icon">📍</div>
@@ -423,12 +450,7 @@
       <div class="info-card">
         <div class="info-icon">🍽️</div>
         <div class="info-title">Restauration</div>
-        <p class="info-text">Food trucks et stands locaux liégeois sur place. Ouvert dès 17h30.</p>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">🏕️</div>
-        <div class="info-title">Hébergement</div>
-        <p class="info-text">Partenariats hôteliers à venir. Inscris-toi à la newsletter pour être informé.</p>
+        <p class="info-text">Food trucks et stands locaux liégeois sur place. Ouvert dès 17h00.</p>
       </div>
     </div>
   </div>
@@ -457,11 +479,11 @@
         </div>
         <div class="faq-item">
           <button class="faq-q">Y a-t-il de la nourriture sur place ? <span class="faq-icon"></span></button>
-          <div class="faq-a"><div class="faq-a-inner">Oui, des stands food & beverage seront présents avec une sélection de restaurateurs locaux liégeois. Ouvert dès 17h30 chaque soir du festival.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Oui, des stands food & beverage seront présents avec une sélection de restaurateurs locaux liégeois. Ouvert dès 17h00 chaque soir du festival.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-q">Mon billet est-il valable plusieurs jours ? <span class="faq-icon"></span></button>
-          <div class="faq-a"><div class="faq-a-inner">Le pass 4 jours est valable les 4 soirs du festival. Le pass journée ne donne accès qu'au soir choisi lors de l'achat. Un bracelet vous sera remis à l'entrée.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Le pass 4 jours est valable les 4 soirs du festival. Le pass journée ne donne accès qu'au soir choisi lors de l'achat.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-q">Les mineurs sont-ils acceptés ? <span class="faq-icon"></span></button>
@@ -524,7 +546,7 @@
           <li><a href="guillemins.html">ORAH Guillemins — 18 avr.</a></li>
           <li><a href="festival.html">ORAH Festival — 24–27 juin</a></li>
           <li><a href="edition-2025.html">Édition 2025</a></li>
-          <li><a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" target="_blank" rel="noopener">Billetterie</a></li>
+          <li><a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" target="_blank" rel="noopener">Tickets</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -559,6 +581,30 @@
   </div>
 </div>
 
+<!-- ============ POPUP LAST TICKETS ============ -->
+<div class="last-tickets-popup" id="lastTicketsPopup" role="dialog" aria-modal="true" aria-label="Derniers tickets ORAH Festival">
+  <div class="last-tickets-overlay" id="lastTicketsOverlay"></div>
+  <div class="last-tickets-card">
+    <button class="last-tickets-close" id="lastTicketsClose" aria-label="Fermer">✕</button>
+    <div class="last-tickets-inner">
+      <img src="assets/logos/Logo_nav_creme_.png" alt="ORAH" class="last-tickets-logo">
+      <p class="last-tickets-dates">24 | 25 | 26 | 27 <strong>JUNE</strong></p>
+      <p class="last-tickets-location">Quai des fermettes — Visé (Belgium)</p>
+      <div class="last-tickets-text">
+        <span class="last-tickets-last">LAST</span>
+        <span class="last-tickets-tickets"><em>TICKETS</em></span>
+        <span class="last-tickets-remaining"><em>REMAINING</em></span>
+      </div>
+      <a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" class="last-tickets-cta" target="_blank" rel="noopener">
+        <strong>ACHETER MON PASS</strong><br>
+        <span>WWW.ORAH-EVENT.COM</span>
+      </a>
+    </div>
+  </div>
+</div>
+
 <script src="js/main.js"></script>
 </body>
 </html>
+
+
