@@ -803,3 +803,156 @@ input, textarea, select { font-family: var(--font); }
   .partner-cta-card .btn-lg { width: 100%; justify-content: center; box-sizing: border-box; }
 }
 
+/* ============================================
+   POPUP LAST TICKETS FESTIVAL
+   ============================================ */
+.last-tickets-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.45s var(--ease-out), visibility 0.45s;
+}
+.last-tickets-popup.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.last-tickets-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 9, 10, 0.80);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.last-tickets-card {
+  position: relative;
+  width: min(380px, 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  transform: translateY(28px) scale(0.96);
+  transition: transform 0.45s var(--ease-out);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.7);
+}
+.last-tickets-popup.is-open .last-tickets-card {
+  transform: translateY(0) scale(1);
+}
+/* Orange/blue gradient background — matching the visual */
+.last-tickets-inner {
+  background:
+    radial-gradient(ellipse 60% 40% at 15% 8%,  #5BAEE8 0%, transparent 55%),
+    radial-gradient(ellipse 50% 35% at 88% 90%, #4A9EE8 0%, transparent 50%),
+    radial-gradient(ellipse 80% 70% at 55% 50%, #E8430A 0%, #F57A00 60%, #E03000 100%);
+  padding: clamp(28px, 6vw, 48px) clamp(24px, 5vw, 40px);
+  text-align: center;
+  color: #fff;
+}
+.last-tickets-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  z-index: 1;
+}
+.last-tickets-close:hover { background: rgba(255,255,255,0.35); }
+.last-tickets-logo {
+  height: 36px;
+  object-fit: contain;
+  margin: 0 auto 12px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.last-tickets-dates {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.last-tickets-dates strong {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.last-tickets-location {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 28px;
+}
+.last-tickets-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.9;
+  margin-bottom: 32px;
+}
+.last-tickets-last {
+  font-size: clamp(68px, 18vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.last-tickets-tickets {
+  font-size: clamp(52px, 14vw, 80px);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  color: rgba(255,255,255,0.88);
+  text-transform: uppercase;
+  margin-top: -8px;
+}
+.last-tickets-remaining {
+  font-size: clamp(18px, 5vw, 28px);
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  margin-top: 4px;
+}
+.last-tickets-cta {
+  display: block;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+.last-tickets-cta strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.last-tickets-cta span {
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.8;
+  letter-spacing: 0.06em;
+}
+.last-tickets-cta:hover {
+  background: rgba(255,255,255,0.15);
+}
+

@@ -23,8 +23,8 @@
     </a>
     <nav class="main-nav">
       <a href="index.html">Accueil</a>
-      <a href="guillemins.html">ORAH Guillemins</a>
       <a href="festival.html" class="active">ORAH Festival</a>
+      <a href="guillemins.html">ORAH Guillemins</a>
       <a href="edition-2025.html">Édition 2025</a>
       <a href="partenaires.html">Partenaires</a>
       <a href="benevoles.html">Bénévoles</a>
@@ -62,7 +62,7 @@
       ORAH<br><span class="text-orange">Festival.</span>
     </h1>
     <p class="body-lg hero-sub">
-      4 jours. 4 artistes par jour. 16 performances.<br>
+      4 jours. 19 artistes. 18 performances.<br>
       Le festival de house music qui redéfinit l'été à Visé.
     </p>
     <div class="btn-group">
@@ -72,7 +72,7 @@
     <div class="gap-chips mt40">
       <span class="chip">24 → 27 Juin 2026</span>
       <span class="chip">4 jours</span>
-      <span class="chip chip-orange">16 artistes</span>
+      <span class="chip chip-orange">19 artistes</span>
       <span class="chip">Quai des fermettes, 4600 Visé</span>
     </div>
   </div>
@@ -89,7 +89,7 @@
     <div class="stat-lbl">Jours de festival</div>
   </div>
   <div class="stat">
-    <div class="stat-num" data-val="16">16</div>
+    <div class="stat-num" data-val="18">18</div>
     <div class="stat-lbl">Performances</div>
   </div>
   <div class="stat">
@@ -155,7 +155,7 @@
         </div>
         <div class="lineup-slot">
           <span class="lineup-slot-time">19:00</span>
-          <span class="lineup-slot-name"><a href="https://www.instagram.com/alexvergnet/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">ALEX VERGNET</a></span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/alexvergnet/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">ALEXIS VERGNET</a></span>
           <span class="lineup-slot-tag">House</span>
         </div>
         <div class="lineup-slot">
@@ -186,7 +186,7 @@
       <div class="lineup-day">
         <div class="lineup-slot">
           <span class="lineup-slot-time">17:00</span>
-          <span class="lineup-slot-name"><a href="https://www.instagram.com/bricecariola/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">BRICE</a> B2B <a href="https://www.instagram.com/a_m_i_music" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">AMI</a></span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/bricecariola/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">BRICE CARIOLA</a> B2B <a href="https://www.instagram.com/akoura.music/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">AKOURA</a></span>
           <span class="lineup-slot-tag">Opening</span>
         </div>
         <div class="lineup-slot">
@@ -215,14 +215,14 @@
     <!-- Jour 3 — Vendredi 26 juin -->
     <div class="tab-panel">
       <div class="lineup-day">
-        <div class="lineup-slot tba">
+        <div class="lineup-slot">
           <span class="lineup-slot-time">17:00</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
+          <span class="lineup-slot-name"><span style="color:var(--orange);">ANDARA</span></span>
           <span class="lineup-slot-tag">Opening</span>
         </div>
-        <div class="lineup-slot tba">
+        <div class="lineup-slot">
           <span class="lineup-slot-time">18:30</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/juliiusofc/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">DIEGO</a></span>
           <span class="lineup-slot-tag">House</span>
         </div>
         <div class="lineup-slot">
@@ -251,14 +251,14 @@
     <!-- Jour 4 — Samedi 27 juin -->
     <div class="tab-panel">
       <div class="lineup-day">
-        <div class="lineup-slot tba">
+        <div class="lineup-slot">
           <span class="lineup-slot-time">17:00</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/2nd_life2/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">2NDLIFE</a></span>
           <span class="lineup-slot-tag">Opening</span>
         </div>
-        <div class="lineup-slot tba">
-          <span class="lineup-slot-time">18:30</span>
-          <span class="lineup-slot-name">TBA — À annoncer</span>
+        <div class="lineup-slot">
+          <span class="lineup-slot-time">19:00</span>
+          <span class="lineup-slot-name"><a href="https://www.instagram.com/vicc_music/" target="_blank" rel="noopener" style="color:var(--orange); text-decoration:none;">VICC</a></span>
           <span class="lineup-slot-tag">House</span>
         </div>
         <div class="lineup-slot">
@@ -578,6 +578,28 @@
   <div class="cookie-actions">
     <button class="btn btn-sm btn-outline cookie-decline">Refuser</button>
     <button class="btn btn-sm btn-primary cookie-accept">Accepter</button>
+  </div>
+</div>
+
+<!-- ============ POPUP LAST TICKETS ============ -->
+<div class="last-tickets-popup" id="lastTicketsPopup" role="dialog" aria-modal="true" aria-label="Derniers tickets ORAH Festival">
+  <div class="last-tickets-overlay" id="lastTicketsOverlay"></div>
+  <div class="last-tickets-card">
+    <button class="last-tickets-close" id="lastTicketsClose" aria-label="Fermer">✕</button>
+    <div class="last-tickets-inner">
+      <img src="assets/logos/Logo_nav_creme_.png" alt="ORAH" class="last-tickets-logo">
+      <p class="last-tickets-dates">24 | 25 | 26 | 27 <strong>JUNE</strong></p>
+      <p class="last-tickets-location">Quai des fermettes — Visé (Belgium)</p>
+      <div class="last-tickets-text">
+        <span class="last-tickets-last">LAST</span>
+        <span class="last-tickets-tickets"><em>TICKETS</em></span>
+        <span class="last-tickets-remaining"><em>REMAINING</em></span>
+      </div>
+      <a href="https://shop.paylogic.com/f7c0844286554c8d90c8ad2bafd7b342/orah-festival" class="last-tickets-cta" target="_blank" rel="noopener">
+        <strong>ACHETER MON PASS</strong><br>
+        <span>WWW.ORAH-EVENT.COM</span>
+      </a>
+    </div>
   </div>
 </div>
 
