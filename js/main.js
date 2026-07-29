@@ -340,31 +340,6 @@ function initCounters() {
 
 
 /* ============================================
-   POPUP LAST TICKETS FESTIVAL
-   ============================================ */
-function initLastTicketsPopup() {
-  const popup = document.getElementById('lastTicketsPopup');
-  if (!popup) return;
-
-  const closeBtn = document.getElementById('lastTicketsClose');
-  const overlay  = document.getElementById('lastTicketsOverlay');
-
-  function openPopup() {
-    popup.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closePopup() {
-    popup.classList.remove('is-open');
-    document.body.style.overflow = '';
-  }
-
-  setTimeout(openPopup, 1200);
-  closeBtn.addEventListener('click', closePopup);
-  overlay.addEventListener('click', closePopup);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
-}
-
-/* ============================================
    INIT
    ============================================ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -377,5 +352,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
   initMarquee();
   initCounters();
-  initLastTicketsPopup();
 });
