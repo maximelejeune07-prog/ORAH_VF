@@ -56,7 +56,22 @@
       "Bash(venv/bin/python main.py --dry-run)",
       "Bash(venv/bin/python -c \":*)",
       "Bash(venv/bin/pip install \"google-generativeai>=0.8.0\" -q)",
-      "Bash(venv/bin/python main.py --run-now)"
+      "Bash(venv/bin/python main.py --run-now)",
+      "Read(//c/Users/MaximeLejeune/Downloads/**)",
+      "Read(//c/Users/MaximeLejeune/AppData/Local/Temp/**)",
+      "Read(//c/Users/MAXIME~1/AppData/Local/Temp/claude/**)",
+      "Bash(/c/Users/MaximeLejeune/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffprobe.exe -v error -select_streams v:0 -show_entries stream=width,height -of default=noprint_wrappers=1 '/c/Users/MaximeLejeune/Documents/CLAUDE/ORAH WEBSITE/assets/images/PARTENAIRES/FESTIVAL/habay-credit-assurance-invest.jpeg.jpg')",
+      "Bash(/c/Users/MaximeLejeune/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe -y -i habay-credit-assurance-invest.jpeg.jpg -vf colorkey=white:0.15:0.08,format=rgba -quality 95 web/habay.webp)",
+      "Bash(/c/Users/MaximeLejeune/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe -i '/c/Users/MaximeLejeune/Documents/CLAUDE/ORAH WEBSITE/assets/images/PARTENAIRES/FESTIVAL/web/habay.webp' -vf crop=5:5:0:0 -pix_fmt rgba -f rawvideo -)",
+      "Bash(xxd)",
+      "Bash(/c/Users/MaximeLejeune/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe -y -i habay.webp -f lavfi -i color=c=0xE9621A:s=400x159 -filter_complex '[0]alphaextract[a];[1][a]alphamerge' -frames:v 1 -update 1 -quality 95 habay-orange.webp)",
+      "Bash(/c/Users/MaximeLejeune/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe -i habay-orange.webp -vf crop=2:2:60:135 -f rawvideo -pix_fmt rgba -)",
+      "Bash(/c/Users/MaximeLejeune/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe -i habay-orange.webp -vf crop=400:20:0:135 -f rawvideo -pix_fmt rgba -)",
+      "Bash(python3 -c ' *)",
+      "Bash(xxd /tmp/strip.raw)",
+      "Bash(mv \"assets/images/PARTENAIRES/FESTIVAL/web/habay.webp\" \"assets/images/PARTENAIRES/FESTIVAL/web/habay-original.webp\")",
+      "Bash(mv \"assets/images/PARTENAIRES/FESTIVAL/web/habay-orange.webp\" \"assets/images/PARTENAIRES/FESTIVAL/web/habay.webp\")",
+      "mcp__d6fb7e11-56ad-4c57-85b9-089ea77edf08__netlify-project-services-reader"
     ]
   }
 }

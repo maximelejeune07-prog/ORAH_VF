@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "ORAH Website",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["C:/Users/MaximeLejeune/Documents/CLAUDE/ORAH WEBSITE/serve.py"],
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:/Users/MaximeLejeune/Documents/CLAUDE/ORAH WEBSITE/serve.ps1"],
       "port": 3000
     }
   ]
