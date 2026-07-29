@@ -792,8 +792,8 @@ input, textarea, select { font-family: var(--font); }
   .footer-top { grid-template-columns: 1fr; }
   .footer-brand { grid-column: span 1; }
   .footer-bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .btn-group { flex-direction: column; }
-  .hero-center .btn-group { align-items: center; }
+  .btn-group { flex-direction: column; align-items: center; }
+  .btn { white-space: normal; text-align: center; max-width: 100%; }
   .hero-app-btn { margin-top: 10px; width: 100%; }
   .hero-app-btn .btn { width: 100%; }
   .cookie-banner { flex-direction: column; }
